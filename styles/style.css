@@ -108,6 +108,10 @@ main{
     display: flex;
     gap: 100px;
 }
+.feature-love img{
+    height: 80%;
+    margin-left: 90px;
+}
 .ten-years{
     border-radius: 8px;
     background: #FF900E;
@@ -115,10 +119,17 @@ main{
     color: #FFF;
     width: 342px;
     padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
 }
 .ten-years h2{
     font-size: 4rem;
     font-weight: 700;
+    margin: 0;
+}
+.ten-years p{
+    font-size: 1.5rem;
 }
 .feature-love .card{
     border-radius: 8px;
@@ -204,7 +215,7 @@ main{
         padding: 20px;
     }
     nav,
-    .teams-container, .facts-card-container,.sponser-img-container
+    .teams-container, .feature-love, .facts-card-container,.sponser-img-container
     {
         flex-direction: column;
     }
@@ -229,13 +240,17 @@ main{
         align-items: center;
         gap: 40px;
     }
+    .feature-love img{
+        width: 100%;
+        margin-left: 0;
+    }
 }
 /* tablet */
 @media screen and (min-width:576px) and (max-width:992px) {
     header{
         padding: 50px;
     }
-    nav, .teams-container, .sponser-img-container{
+    nav, .teams-container,.feature-love, .sponser-img-container{
         flex-direction: column;
     }
     .img-container{
