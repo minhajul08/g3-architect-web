@@ -102,7 +102,36 @@ main{
     color: #727272;
     font-weight: 400;
 }
-
+/* feature section started */
+.feature-love{
+    padding: 50px;
+    display: flex;
+    gap: 100px;
+}
+.ten-years{
+    border-radius: 8px;
+    background: #FF900E;
+    border: 0;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+}
+.ten-years h2{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.feature-love .card{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.feature-love .sponser-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+/* feature section-finished */
 /* facts-section */
 .facts{
     margin-bottom: 30px;
