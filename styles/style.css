@@ -59,10 +59,10 @@ nav a {
     cursor: pointer;
     font-size: 1.25rem;
 }
-/* img{
+.banner-img{
     width: 100%;
     padding-top: 20px;
-} */
+} 
 
 main{
     max-width: 1440px;
@@ -104,28 +104,36 @@ main{
 }
 
 /* facts-section */
+.facts{
+    margin-bottom: 30px;
+    padding: 50px;
+}
 .facts-title{
    color:#131313;
    font-size: 2.8rem;
    font-weight: 700;
+   margin-bottom: 20px;
+   /* padding: 30px; */
 
 }
 .facts-description{
   color:#727272;
   font-size: 1rem;
   font-weight: 400;
+  /* padding: 30px; */
 }
 
 .facts-card-container{
     display: flex;
     justify-content: space-around;
+    padding-top: 30px;
 }
 
 .facts-card-container .card{
   border-radius: 8px;
   border: 1px solid #FF900E;
   text-align: center;
-  padding: 30px;
+  /* padding: 30px; */
 }
 .facts-card-container .card-stats{
     color: #424242;
@@ -139,7 +147,27 @@ main{
  font-weight: 600;
  margin: 5px;
 }
+/* Sponspors -section */
+.sponser{
+    text-align: center;
+}
+.sponser-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.sponser-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.sponser-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+   
 
+}
 
 /* media quires mobile */
 @media screen and (max-width:576px) {
@@ -147,7 +175,7 @@ main{
         padding: 20px;
     }
     nav,
-    .teams-container
+    .teams-container, .facts-card-container,.sponser-img-container
     {
         flex-direction: column;
     }
@@ -163,13 +191,22 @@ main{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
+    .facts-card-container{
+        gap: 24px;
+    }
+    .sponser-img-container{
+        /* width: 165px;
+        display: flex; */
+        align-items: center;
+        gap: 40px;
+    }
 }
 /* tablet */
 @media screen and (min-width:576px) and (max-width:992px) {
     header{
         padding: 50px;
     }
-    nav, .teams-container{
+    nav, .teams-container, .sponser-img-container{
         flex-direction: column;
     }
     .img-container{
@@ -182,5 +219,11 @@ main{
  }
  .teams-content{
     padding: 50px;
+ }
+ .sponser-img-container{
+    width: 165px;
+    margin-left: 270px;
+    gap: 40px;
+    
  }
 }
